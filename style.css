@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    margin:0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fraunces', sans-serif;
+}
+#home{
+    background: url('/images/desktop/image-header.jpg');
+    min-height: 100vh;
+    color: rgba(255, 255, 255, 0.897);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.stand, .transform{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 8%;
+    gap: 5%;
+}
+.stand h3, .transform h3{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.stand p{
+    width: 100%;
+    padding: 0 0.5rem;
+}
+nav {
+    width: 40%;
+}
+.menu {
+    display: none;
+}
+h3{
+    font-weight: bolder;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    
+}
+nav ul li{
+    padding: 0.3rem 0.5rem;
+}
+nav ul li:hover {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+}
+svg{
+    margin: 0 auto;
+}
+.we{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: hsl(0, 0%, 100%);
+    margin: 5%;
+}
+.we h1{
+    margin-bottom: 5%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.photography h3, .graphics h3{
+    padding: 4%;
+    font-size:1.7rem;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+}
+.Big{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Big .reverse {
+    width: 100%;
+    display: flex;
+}
+.Big .reverse div {
+    width: 50%;
+}
+.Big div{
+    width: 50%;
+    height: 500px;
+}
+.Big img{
+    width: 100%;
+    height: 100%;
+}
+.graphics{
+    background: url(images/desktop/image-graphic-design.jpg);
+    background-position: top;
+    position: relative;
+}
+.photography{
+    background: url(images/desktop/image-photography.jpg);
+    position: relative;
+}
+.graphics div, .photography div{
+    position: absolute;
+    bottom: 10%;
+    height: auto;
+    text-align: center; 
+    left: 25%;
+}
+.brand{
+    font-weight: 700;
+}
+.stand a,.transform a{
+    text-decoration: none;
+    font-weight: 900;
+    font-family: 'Fraunces', sans-serif ;
+    color: black;
+    text-transform: uppercase;
+}
+span{
+     border-top: 10px solid hsl(7, 87%, 75%);
+     display: block;
+     border-radius: 10px;
+     margin-top: -7%;
+}
+.graphics div p{
+    padding: 0 0.3rem;
+}
+ .second{
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 5%;
+    display: flex;
+    padding: 10%;
+    flex-wrap: wrap;
+
+}
+/* .Emily,.Thomaas.Jennie{
+    display:inline;
+    left: 100%;
+    padding: 3%; 
+}*/
+.test{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+    color: hsl(232, 10%, 55%);
+    font-weight: 900;
+    padding: 2%;
+}
+.second div{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 30px;
+}
+.second div p{
+    color: hsl(232, 10%, 55%);
+    text-align: center;
+    line-height: 1.8;
+    padding: 5%;
+    font-size: 900;
+    font-weight: 800;
+}
+.second div img{
+    width: 72px;
+    border-radius: 50%;
+}
+section {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-container{
+    display: flex;
+}
+.image-container div{
+    height: 400px;
+    width: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bottle{
+    background-image: url('./images/desktop/image-gallery-milkbottles.jpg')
+}
+.orange{
+    background-image:url('./images/desktop/image-gallery-orange.jpg') 
+}
+.icecream{
+    background-image: url('./images/desktop/image-gallery-cone.jpg');
+}
+.cubes{
+    background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+}
+footer{
+    height: 300px;
+    background-color: thistle;
+    color: hsl(168, 34%, 41%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    gap:30px ;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.social i{
+    font-size: 1.5rem;
+    margin: 7%;
+}
+.social{
+    width: 20%;
+}
+.social a{
+    color: hsl(168, 34%, 41%);
+}
+ul li:hover{
+    color: white;
+}
+@media screen and (max-width:640px){
+    .menu {
+        position: fixed;
+        right: 5%;
+        width: 8%;
+        height: 28px;
+        padding: .5rem .2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .menu span {
+        border-top: 2px solid white;
+    }
+    nav ul.active{
+        display: block;
+        background-color: white;
+        position: absolute;
+        top: 20%;
+        width: 90%;
+        left: 5%;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        height: 250px;
+        padding: 2rem 1rem;
+    }
+    nav ul{
+        display: none;
+    }
+    h3{
+        font-size: 150%;
+    }
+    h1{
+        text-align: center;
+        margin-top: 15%;
+    }
+    #home{
+        background: url('/images/mobile/image-header.jpg');
+        background-size: cover;
+    }
+    .Big div{
+        width: 100%;
+    }
+    .Big .reverse{
+        height:700px;
+
+        flex-direction: column-reverse;
+    }
+    .Big .reverse div {
+        width: 100%;
+    }
+    .Big .egg, .Big .cup{
+        height: 300px;
+    }
+    
+    .Big .stand, .Big .transform {
+        align-items: center;
+        text-align: center;
+        line-height: 1.5;
+        height: 400px;
+    }
+    .stand p{
+        text-align: center;
+    }
+    .Big .graphics,.Big .photography{
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 600px;
+    }
+    .graphics div p,.photography div p{
+        padding: 0 1rem;
+        line-height: 1.5;
+    }
+    .Big{
+        width: 100%;
+    }
+
+    .transform h3,.stand h3{
+        line-height: 1.2;
+    }
+    .graphics div,.photography div{
+        left: 0;
+    }
+    .second div{
+        width: 100%;
+    }
+    .second{
+        padding: 5%;
+    }
+    .photography{
+        background-position: center;
+    }
+    section{
+        margin-top: -2%;
+        margin-bottom: 10%;
+    }
+    section h4{
+        font-weight: 900;
+        font-size: 130%;
+    }
+    .image-container div{
+        width: 50%;
+        height: 200px;
+    }
+    .image-container{
+        flex-wrap: wrap;
+    }
+    footer h3{
+        font-weight: 900;
+    }
+    .social{
+        width: 70%;
+    }
+    .transform a:hover >  span {
+        border-top-color:hsl(51, 100%, 49%);
+    }
+    nav ul li:hover {
+        border: 1px solid yellow;
+        background-color: yellow;
+        border-radius: 50px;
+        color: black;
+    }
+    }
